@@ -55,20 +55,16 @@
             <h1 class="title is-1 publication-title">Posture-Informed Muscular Force Learning for Robust Hand Pressure Estimation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Kyungjin Seo</a>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Junghoon Seo</a>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Hanseok Jeong</a>,</span>
-                    <span class="author-block">
-                      <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Sang Ho Yoon</a>
-                  </span>
-                  </div>
+              <span class="author-block"> <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Kyungjin Seo<small><sup>(1)*</sup></small></a>,</span>
+              <span class="author-block"> <a href="https://mikigom.github.io/" target="_blank">Junghoon Seo<small><sup>(1)*</sup></small></a>,</span>
+              <span class="author-block"> <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Hanseok Jeong<small><sup>(1)</sup></small></a>,</span>
+              <span class="author-block"> <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Sangpil Kim<small><sup>(2)</sup></small></a>,</span>
+              <span class="author-block"> <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Sangho Yoon<small><sup>(1)</sup></small></a></span>
+            </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">KAIST<br>Neurips 2024</span>
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                    <span class="author-block">(1) KAIST   (2) Korea University<br>NeurIPS 2024</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -80,7 +76,7 @@
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Paper</span>
+                        <span>Paper (OO MB)</span>
                       </a>
                     </span>
 
@@ -91,7 +87,7 @@
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
-                      <span>Supplementary</span>
+                      <span>Low-res Paper (OO MB)</span>
                     </a>
                   </span>
 
@@ -129,14 +125,15 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
+      <!-- video poster="" id="tree" autoplay controls muted loop height="100%" -->
+      <video poster="" id="tree" controls loop height="100%">
         <!-- Your video here -->
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+      <!-- h2 class="subtitle has-text-centered">
+        We introduces a novel framework that improves hand pressure estimation by integrating 3D hand posture information with forearm sEMG signals. 
+      </h2 -->
     </div>
   </div>
 </section>
@@ -150,7 +147,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            We present a novel framework that enhances hand pressure estimation by leveraging 3D hand posture information to augment forearm surface electromyography (sEMG) signals. Our approach utilizes detailed spatial information from 3D hand poses in conjunction with dynamic muscle activity from sEMG to enable accurate and robust whole-hand pressure measurements under diverse hand-object interactions. We also developed a multimodal data collection system that combines a pressure glove, an sEMG armband, and a markerless finger-tracking module. We created a comprehensive dataset from 20 participants, capturing synchronized data of hand posture, sEMG signals, and exerted hand pressure across various hand postures and hand-object interaction scenarios using our collection system. Our framework enables precise hand pressure estimation in complex and natural interaction scenarios. Our approach substantially mitigates the limitations of traditional sEMG-based or vision-based methods by integrating 3D hand posture information with sEMG signals.
           </p>
         </div>
       </div>
@@ -280,7 +277,16 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>
+    @inproceedings{
+      seo2024postureinformed,
+      title={Posture-Informed Muscular Force Learning for Robust Hand Pressure Estimation},
+      author={Kyungjin Seo, Junghoon Seo, Hanseok Jeong, Sangpil Kim, and Sangho Yoon},
+      booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+      year={2024},
+      url={https://openreview.net/forum?id=LtS7pP8rEn}
+      }       
+      </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
